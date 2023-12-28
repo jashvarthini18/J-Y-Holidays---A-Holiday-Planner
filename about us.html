@@ -1,0 +1,79 @@
+<html><head><SCRIPT>
+  function ShowAndHide() {
+      var x = document.getElementById('SectionName');
+      if (x.style.display == 'none') {
+          x.style.display = 'block';
+      } else {
+          x.style.display = 'none';
+      }
+  }
+  </SCRIPT>
+  <style>
+  body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest_181624-5840.jpg?w=996&t=st=1692543908~exp=1692544508~hmac=e0411113f0e8b6fadd685f0077e2ffb7fb43582c39b8ab8e96106fb457943c03");
+
+  height: 95%;
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+</style></head>
+  <body>
+    
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to J Y Holidays!</h1>
+        <p>Your unbound search destination</p>
+        
+        <button ONCLICK="ShowAndHide()"><b>About Us</b></button>
+      </div>
+    </div>
+    
+    <DIV ID="SectionName" STYLE="display:none"><h2>About Us - J Y Holidays</h2><p>
+
+      Welcome to J Y Holidays, your gateway to unforgettable journeys and extraordinary experiences around the world. We are more than just a travel planner; we are your partners in crafting personalized adventures that cater to your dreams and desires. With a passion for exploration and a commitment to excellence, we're here to turn your travel fantasies into reality.</p>
+      <div><h2>Our Mission</h2>
+
+       <p>At J Y Holidays, our mission is to inspire, connect, and empower travelers to explore the world with a sense of wonder and discovery. We believe that travel is not just about visiting new places, but about immersing oneself in diverse cultures, savoring unique cuisines, and creating lasting memories. Our dedicated team is driven by the belief that every journey should be as exceptional as the traveler embarking upon it.</p></div>
+  <div><h2>Our Services</h2>
+
+    <li>Custom Itineraries: Whether you're seeking a romantic getaway, a family adventure, or a solo expedition, we create custom itineraries that align with your travel style and preferences.</li>
+  <li>Ticket Booking: In order to ensure that your trip is secure and comfortable, we have carefully selected some economical and cheap flights.</li>
+<li>Hotel Booking: As the globe progresses toward sustainability and eco-friendly measures, we have carefully selected economical and ecological hotels.
+
+</li></div>
+     </DIV> </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shimla: The Quintessential Hill Station Experience</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color:white;
+  }
+
+  p {
+    line-height: 1.6;
+    color:#333;
+  }
+
+  img {
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Make the header a positioned container */
+  }
+
+  .logo {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 80px; /* Adjust the size as needed */
+    height: auto;
+    margin-right:3px;
+  }
+
+  .logo-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjust the font size */
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+
+
+
+
+
+
+
+
+   .flip-container {
+            perspective: 1000px;
+            width: 300px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            float: left; /* Float the containers to place them adjacently */
+            margin-right: 10px; /* Add margin for spacing between containers */
+        }
+
+        /* Style for the flip-card */
+        .flip-card {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        /* Style for the front side of the card */
+        .flip-card-front,
+        .flip-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Align content to the bottom */
+            align-items: flex-end; /* Align content to the right */
+        }
+
+        /* Style for the front side of the card */
+        .flip-card-front {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+
+     
+
+        /* Style for the image */
+      
+        .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        /* Style for the image */
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        /* Style for the description overlay */
+        .card .description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Show the description on hover */
+        .card:hover .description {
+            opacity: 1;
+        }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="C:\Users\Admin\Downloads\logo.jpg" width="80" height="60" alt="Holiday Planners" />
+      <div class="logo-name">J Y Holidays</div>
+    </div>
+
+    <h1>Shimla: The Quintessential Hill Station Experience</h1>
+  </header>
+  
+<!--<div class="container">
+    <p>Nestled in the majestic Himalayan foothills, Shimla stands as a testament to nature's boundless beauty and historical charm. From its breathtaking landscapes to its rich history, this enchanting hill station offers a unique and memorable experience for travelers of all kinds.</p>
+    <div class="image-container">
+     
+    <div class="flip-container">
+      <div class="flip-card">
+          <div class="flip-card-front">
+              <img class="image" src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/08/Cover1.jpg" alt="Image 1">
+              <div class="image-title">Natural Beauty at its Finest</div>
+          </div>
+          <div class="flip-card-back">
+              <p>Shimla is renowned for its picturesque landscapes that seem to be plucked straight from a postcard. The rolling hills covered in lush pine and deodar forests create a tranquil atmosphere that captivates every visitor. The cool mountain air and panoramic vistas provide a refreshing escape from the hustle and bustle of everyday life.</p>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="flip-container">
+      <div class="flip-card">
+          <div class="flip-card-front">
+              <img class="image" src="image2.jpg" alt="Image 2">
+              <div class="image-title">Colonial History and Architectural Delights</div>
+          </div>
+          <div class="flip-card-back">
+              <p>Description 2</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="flip-container">
+    <div class="flip-card">
+        <div class="flip-card-front">
+            <img class="image" src="image2.jpg" alt="Image 3">
+            <div class="image-title">
+              Pleasant Weather Throughout the Year
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <p>Description 2</p>
+        </div>
+    </div>
+</div>
+
+<div class="flip-container">
+  <div class="flip-card">
+      <div class="flip-card-front">
+          <img class="image" src="image2.jpg" alt="Image 4">
+          <div class="image-title">Adventure Awaits</div>
+      </div>
+      <div class="flip-card-back">
+          <p>Description 2</p>
+      </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flip-card">
+      <div class="flip-card-front">
+          <img class="image" src="image2.jpg" alt="Image 5">
+          <div class="image-title">Shopping and Local Culture</div>
+      </div>
+      <div class="flip-card-back">
+          <p>Description 2</p>
+      </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flip-card">
+      <div class="flip-card-front">
+          <img class="image" src="https://shimlatourism.co.in/images/places-to-visit/headers/kalka-shimla-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Accessible and Well-Connected" >
+          <div class="image-title">Accessible and Well-Connected</div>
+      </div>
+      <div class="flip-card-back">
+          <p>Description 2</p>
+      </div>
+  </div>
+</div>
+</div>-->
+
+<div class="card">
+  <img src="https://shimlatourism.co.in/images/places-to-visit/headers/kalka-shimla-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Image Description">
+  <div class="description">
+      <p>Generating random paragraphs can be an excellent way for writers to get their creative flow going at the beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. This forces the writer to use creativity to complete one of three common writing challenges. The writer can use the paragraph as the first one of a short story and build upon it. A second option is to use the random paragraph somewhere in a short story they create. The third option is to have the random paragraph be the ending paragraph in a short story. No matter which of these challenges is undertaken, the writer is forced to use creativity to incorporate the paragraph into their writing.</p>
+  </div>
+</div>
+  <!-- Repeat the above code for containers 3 to 6 with different images and titles -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h2>1. Natural Beauty at its Finest</h2>
+<img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/08/Cover1.jpg" alt= "Natural Beauty at its Finest">
+<p>Shimla is renowned for its picturesque landscapes that seem to be plucked straight from a postcard. The rolling hills covered in lush pine and deodar forests create a tranquil atmosphere that captivates every visitor. The cool mountain air and panoramic vistas provide a refreshing escape from the hustle and bustle of everyday life.</p>
+
+<h2>2. Colonial History and Architectural Delights</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Gaiety_Theater_-_Mall_Road_-_Shimla_2014-05-07_1290.JPG" alt="Colonial History and Architectural Delights">
+<p>Once the summer capital of British India, Shimla boasts a rich colonial heritage that is reflected in its architecture and landmarks. The historic Ridge, Gaiety Theatre, and Viceregal Lodge are just a few examples of the charming colonial structures that grace the town. Walking through these old streets is like taking a journey back in time.</p>
+
+<h2>3. Pleasant Weather Throughout the Year</h2>
+<img src="https://img.veenaworld.com/wp-content/uploads/2023/05/Explore-the-Most-Important-Places-to-Visit-near-Shimla-scaled-e1683012214240.webp" alt="">
+<p>Shimla's climate remains inviting year-round, making it an ideal destination regardless of the season. In the summer, the town provides a cool respite from the scorching heat of the plains. In winter, when snow blankets the region, Shimla transforms into a winter wonderland, offering opportunities for snow activities and breathtaking snowy landscapes.
+
+   </p>
+
+<h2> 4. Adventure Awaits</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIk1JlcKZ7laCzkXU2iGtiYOn-bIZWMQpux6ABBHRSEm-6STzaUUWtinljhpfAnnxHe4&usqp=CAU" alt="Adventure Awaits">
+<p>For adventure enthusiasts, Shimla doesn't disappoint. Trekking, camping, and paragliding are just a few of the activities that let you explore the natural beauty up close. The nearby hills and valleys offer a range of thrilling experiences that cater to both beginners and experienced adventurers.</p>
+
+<h2>5. Shopping and Local Culture</h2>
+<img src="https://www.hptourtravel.com/wp-content/uploads/2022/09/CraftBazaarpic.jpg" alt="Shopping and Local Culture">
+<p>The bustling markets of Shimla offer a chance to indulge in some local retail therapy. From handicrafts to woollen garments, the town's markets showcase the artistic talent and craftsmanship of the region. Moreover, you can immerse yourself in the local culture by sampling Himachali cuisine and engaging in traditional festivals.</p>
+
+<h2>6. Accessible and Well-Connected</h2>
+<img src="https://shimlatourism.co.in/images/places-to-visit/headers/kalka-shimla-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Accessible and Well-Connected">
+<p>Shimla's accessibility is a boon for tourists. The Kalka-Shimla Railway, a UNESCO World Heritage site, offers a scenic train ride that is not only convenient but also a delightful experience in itself. Additionally, the well-connected road network makes reaching Shimla relatively easy from nearby cities.</p>
+
+<h2>Plan Your Visit</h2>
+
+<p>Whether you're seeking tranquillity in nature, a glimpse into history, or an adventure-filled getaway, Shimla has something for everyone. Its timeless charm, combined with modern amenities, ensures an unforgettable vacation that will leave you yearning to return.
+
+</p>-->
+<div><h2>Itinerary</h2>
+  <table>
+    <tr>
+        <th>Day</th>
+        <th>Activities</th>
+    </tr>
+    <tr>
+        <td>Day 1</td>
+        <td>
+            <ul><b>Morning</b>
+                <li>08:00 AM: Arrive in Shimla.</li>
+                <li>09:00 AM: Check-in to your hotel.</li>
+            </ul>
+            <ul><b>Late Morning</b>
+                <li>10:00 AM: Explore Mall Road, Shimla's famous shopping and dining area.</li>
+            </ul>
+            <ul><b>Lunch</b>
+                <li>01:00 PM: Enjoy lunch at a local restaurant on or near Mall Road.</li>
+            </ul>
+            <ul><b>Afternoon</b>
+                <li>02:30 PM: Visit The Ridge and explore the Christ Church and Tudor Library.</li>
+                <li>04:00 PM: Explore Jakhoo Temple and enjoy panoramic views.</li>
+            </ul>
+            <ul><b>Evening</b>
+                <li>06:00 PM: Visit Scandal Point for sunset views and Himalayan vistas.</li>
+                <li>08:00 PM: Dinner at a local restaurant.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Day 2</td>
+        <td>
+            <ul><b>Morning</b>
+                <li>07:00 AM: Check-out from your hotel and have breakfast.</li>
+                <li>08:00 AM: Drive to Kufri, a scenic hill station near Shimla.</li>
+            </ul>
+            <ul><b>Late Morning</b>
+                <li>10:00 AM: Explore Kufri and enjoy horse riding and mountain views.</li>
+            </ul>
+            <ul><b>Lunch</b>
+                <li>01:00 PM: Lunch at a restaurant in Kufri.</li>
+            </ul>
+            <ul><b>Afternoon</b>
+                <li>02:30 PM: Visit Green Valley for breathtaking landscapes.</li>
+                <li>04:00 PM: Explore Himalayan Nature Park.</li>
+            </ul>
+            <ul><b>Evening</b>
+                <li>06:00 PM: Return to Shimla.</li>
+                <li>07:30 PM: Last-minute shopping on Mall Road.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+</div>
+
+</div>
+</body>
+</html>
